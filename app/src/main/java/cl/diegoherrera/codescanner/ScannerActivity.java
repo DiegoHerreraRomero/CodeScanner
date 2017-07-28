@@ -180,10 +180,10 @@ public class ScannerActivity extends AppCompatActivity implements Camera.AutoFoc
         llBeauty.setOrientation(LinearLayout.HORIZONTAL);
 
         //Left-Right semi-transparent borders
-        ImageView ivLeft = new ImageView(this);
+        View ivLeft = new View(this);
         ivLeft.setLayoutParams(lpWCMPLeftRight);
         ivLeft.setBackgroundColor(Color.parseColor("#44000000"));
-        ImageView ivRight = new ImageView(this);
+        View ivRight = new View(this);
         ivRight.setLayoutParams(lpWCMPLeftRight);
         ivRight.setBackgroundColor(Color.parseColor("#44000000"));
 
@@ -193,10 +193,10 @@ public class ScannerActivity extends AppCompatActivity implements Camera.AutoFoc
         llCenter.setOrientation(LinearLayout.VERTICAL);
 
         //Top-Botton semi.transparent borders
-        ImageView ivTop = new ImageView(this);
+        View ivTop = new View(this);
         ivTop.setLayoutParams(lpMPWCTopBotton);
         ivTop.setBackgroundColor(Color.parseColor("#44000000"));
-        ImageView ivBotton = new ImageView(this);
+        View ivBotton = new View(this);
         ivBotton.setLayoutParams(lpMPWCTopBotton);
         ivBotton.setBackgroundColor(Color.parseColor("#44000000"));
 
@@ -297,4 +297,6 @@ public class ScannerActivity extends AppCompatActivity implements Camera.AutoFoc
     public void onAutoFocus(boolean success, Camera camera) {
 
     }
+
+
 }
